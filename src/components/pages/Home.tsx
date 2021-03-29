@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { connect } from "react-redux";
+import { useHistory } from "react-router-dom";
 import Board from "react-trello";
 
 import {
@@ -11,16 +12,19 @@ import {
 } from "../../actions/trelloActions";
 
 const Home = ({
-  trello: { userBoard, user, lanes, cards },
+  trello: { userBoard, user, lanes, cards, isAuthenticated },
   addLane,
   deleteLane,
   addCard,
   loadBoard,
   deleteCard,
 }: any) => {
+  const history = useHistory();
   useEffect(() => {
     if (user) loadBoard(user.id);
-  }, [lanes, cards, loadBoard, user]);
+
+    if (!isAuthenticated) history.push("/login");
+  }, [lanes, cards, loadBoard, user, isAuthenticated, history]);
 
   const onLaneAdd = (e) => {
     addLane({

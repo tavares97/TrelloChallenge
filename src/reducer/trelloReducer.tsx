@@ -7,6 +7,7 @@ import {
   ERROR,
   LOAD_BOARD,
   LOGIN_FAIL,
+  LOGOUT,
   REGISTER_FAIL,
   USER_CARDS,
   USER_LANES,
@@ -96,6 +97,17 @@ const trelloReducer = (state = initialState, action: any) => {
         token: null,
         isAuthenticated: false,
         error: action.payload,
+      };
+
+    case LOGOUT:
+      localStorage.removeItem("accessToken");
+      return {
+        user: null,
+        userBoard: [],
+        lanes: [],
+        cards: [],
+        isAuthenticated: null,
+        error: null,
       };
 
     default:

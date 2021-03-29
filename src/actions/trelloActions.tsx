@@ -17,6 +17,7 @@ import {
   USER_CARDS,
   LOAD_BOARD,
   DELETE_CARD,
+  LOGOUT,
 } from "./types";
 
 import setAuthToken from "../utils/setAuthToken";
@@ -87,7 +88,7 @@ export const deleteLane = (id: number) => async (dispatch: any) => {
   }
 };
 
-// //ADD NEW CARD
+//ADD NEW CARD
 export const addCard = (data: any) => async (dispatch: any) => {
   try {
     const res = await axios.post(`http://localhost:5000/cards`, data);
@@ -98,7 +99,7 @@ export const addCard = (data: any) => async (dispatch: any) => {
   }
 };
 
-// //REMOVE CARD
+//REMOVE CARD
 export const deleteCard = (id: number, laneId: number) => async (
   dispatch: any
 ) => {
@@ -106,6 +107,14 @@ export const deleteCard = (id: number, laneId: number) => async (
     await axios.delete(`http://localhost:5000/cards/${id}`);
 
     dispatch({ type: DELETE_CARD, payload: id, laneId });
+  } catch (error) {
+    dispatch({ type: ERROR, payload: error.message });
+  }
+};
+
+export const logout = () => async (dispatch: any) => {
+  try {
+    dispatch({ type: LOGOUT });
   } catch (error) {
     dispatch({ type: ERROR, payload: error.message });
   }
@@ -129,6 +138,7 @@ export const login = (formData: any) => async (dispatch: any) => {
   }
 };
 
+//REGISTER
 export const register = (formData: any) => async (dispatch: any) => {
   try {
     const res = await axios.post("http://localhost:5000/register", formData);
