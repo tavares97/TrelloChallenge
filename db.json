@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "email": "andre@email.com",
+      "password": "$2a$10$A3huMVwbILL.5BnkFCc2YukZNyNusK4h06eJTlnah/80vy3LpiokC",
+      "name": "Andre",
+      "id": 1
+    },
+    {
+      "email": "tony@email.com",
+      "password": "$2a$10$0FTAvELKeKekIq9DhpHLCutrOh57RgPvlTsIrKjaDSHRRZJlv4l6m",
+      "name": "Tony",
+      "id": 2
+    },
+    {
+      "email": "maria@email.com",
+      "password": "$2a$10$XwbXdF20JKff2OvuxsDlmuMw8viI2lyFjA1CVEzj/mcAzeGpd67aO",
+      "name": "maria",
+      "id": 3
+    },
+    {
+      "email": "ric@email.com",
+      "password": "$2a$10$mpUyjQC5cjaTUfxKIu4WiOLSI2RHM9eA4H/s.OjD3u0uqH4QEe6CG",
+      "name": "ric",
+      "id": 4
+    }
+  ],
+  "lanes": [
+    {
+      "id": 1,
+      "title": "BOARD 1",
+      "style": {
+        "width": 280
+      },
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "BOARD 2",
+      "style": {
+        "width": 280
+      },
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "Planned Tasks",
+      "style": {
+        "width": 280
+      },
+      "userId": 2
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "title": "TESTE",
+      "description": "ISTO É UM TESTE",
+      "label": "30 mins",
+      "laneId": 1,
+      "userId": 1
+    },
+    {
+      "title": "asdsad",
+      "description": "asdasd",
+      "label": "asdasd",
+      "userId": 1,
+      "laneId": 2,
+      "id": 2
+    },
+    {
+      "title": "TESTE2",
+      "description": "adssadas",
+      "label": "asdasd",
+      "userId": 1,
+      "laneId": 1,
+      "id": 3
+    }
+  ]
+}
