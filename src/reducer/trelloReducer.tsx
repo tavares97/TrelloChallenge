@@ -20,7 +20,7 @@ import {
 const initialState = {
   accessToken: localStorage.getItem("accessToken"),
   user: null,
-  userBoard: [],
+  userBoard: [{ cards: null }],
   lanes: [],
   cards: [],
   isAuthenticated: null,

@@ -7,22 +7,16 @@
       "id": 1
     },
     {
-      "email": "tony@email.com",
-      "password": "$2a$10$0FTAvELKeKekIq9DhpHLCutrOh57RgPvlTsIrKjaDSHRRZJlv4l6m",
-      "name": "Tony",
+      "email": "tony@gmail.com",
+      "password": "$2a$10$0aunRrYUVMibhLvbao9GdukE4zbWkyH2LCVWi5TM8vknQBggwlmsG",
+      "name": "tony",
       "id": 2
     },
     {
-      "email": "maria@email.com",
-      "password": "$2a$10$XwbXdF20JKff2OvuxsDlmuMw8viI2lyFjA1CVEzj/mcAzeGpd67aO",
-      "name": "maria",
-      "id": 3
-    },
-    {
       "email": "ric@email.com",
-      "password": "$2a$10$mpUyjQC5cjaTUfxKIu4WiOLSI2RHM9eA4H/s.OjD3u0uqH4QEe6CG",
+      "password": "$2a$10$EM1DRxTTLH.joSHdvfmGLOmSpalvQ8SGJFdCKrrcnlBhmcqMo/Bm.",
       "name": "ric",
-      "id": 4
+      "id": 3
     }
   ],
   "lanes": [
@@ -41,14 +35,6 @@
         "width": 280
       },
       "userId": 1
-    },
-    {
-      "id": 3,
-      "title": "Planned Tasks",
-      "style": {
-        "width": 280
-      },
-      "userId": 2
     }
   ],
   "cards": [

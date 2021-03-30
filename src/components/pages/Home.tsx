@@ -58,20 +58,16 @@ const Home = ({
     <div>
       <h1>Board goes here</h1>
 
-      {userBoard.length === 0 ? (
-        <h1>NO DATA</h1>
-      ) : (
-        <Board
-          data={{ lanes: userBoard }}
-          canAddLanes
-          onLaneAdd={onLaneAdd}
-          onLaneDelete={onLaneDelete}
-          onCardAdd={onCardAdd}
-          onCardDelete={onCardDelete}
-          editable
-          style={{ background: "#2b2a2a" }}
-        />
-      )}
+      <Board
+        data={{ lanes: userBoard }}
+        canAddLanes
+        onLaneAdd={onLaneAdd}
+        onLaneDelete={onLaneDelete}
+        onCardAdd={onCardAdd}
+        onCardDelete={onCardDelete}
+        editable
+        style={{ background: "#2b2a2a" }}
+      />
     </div>
   );
 };
