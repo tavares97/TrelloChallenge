@@ -23,3 +23,6 @@ React hooks, Typescript, Redux, materialize-css, react-trello.
 
 BackEnd:
 JSON-server, JSON-server-auth.
+
+This project was given at the end of a IEFP (Portuguese Governament Formation Center) course.
+The goal was to create a ToDo app kind of like trello with cards.
